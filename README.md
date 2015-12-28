@@ -2,7 +2,7 @@
 Very simple CLI too to batch convert spaces indentations to tabs in PHP files with inteligent space counts grouping.
 
 ```bash
-user@dir: ./convert.tabs.php /path/to/target/folder
+user@dir: find /path/to/files/ -type f -name '*.php' -exec php /path/to/convert-tabs.php {} \;
 ```
 
 If file looks good (spaces are consistently), file is converted without backup.
